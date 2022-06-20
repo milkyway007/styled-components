@@ -25,6 +25,30 @@ const StyledCard = styled.article`
     width: 100%;
     border-top-right-radius: 0.25rem;
   }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    h4 {
+      text-transform: capitalize;
+      &::before {
+        content: 'Name: ';
+        color: red;
+      }
+    }
+    p {
+      color: var(--primary);
+      font-weight: 700;
+    }
+  }
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    box-shadow: 0 3px 3px #222;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    max-width: 600px;
+  }
 `;
 
 export default Card;
