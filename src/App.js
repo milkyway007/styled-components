@@ -1,10 +1,13 @@
-import Loading from './components/Loading';
+import { HipsterButton } from './components/Buttons';
 
 function App() {
   return (
     <div style={{ padding: '2rem' }}>
-      <h2>Animation Example</h2>
-      <Loading></Loading>
+      <HipsterButton>click me</HipsterButton>
+      <HipsterButton as='a' href='https://www.johnsmilga.com/'>
+        click me
+      </HipsterButton>
+      <HipsterButton>click me</HipsterButton>
     </div>
   );
 }
