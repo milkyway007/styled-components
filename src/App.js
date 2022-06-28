@@ -1,13 +1,11 @@
-import { HipsterButton } from './components/Buttons';
+import styled from 'styled-components/macro';
+import { DefaultButton } from './components/Buttons';
 
 function App() {
   return (
     <div style={{ padding: '2rem' }}>
-      <HipsterButton>click me</HipsterButton>
-      <HipsterButton as='a' href='https://www.johnsmilga.com/'>
-        click me
-      </HipsterButton>
-      <HipsterButton>click me</HipsterButton>
+      <DefaultButton>click me</DefaultButton>
+      <DefaultButton large>click me</DefaultButton>
     </div>
   );
 }
